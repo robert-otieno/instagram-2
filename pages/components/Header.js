@@ -4,7 +4,7 @@ import { HomeIcon } from "@heroicons/react/solid"
 
 function Header() {
     return (
-        <div>
+        <div className="shadow-sm border-b bg-white sticky top-0 z-50">
             <div className="flex justify-between bg-white max-w-6xl mx-5 lg:mx-auto">
                 {/* Left */}
                 <div className="relative hidden lg:inline-grid w-24 cursor-pointer">
@@ -28,13 +28,16 @@ function Header() {
                 <div className="flex items-center justify-end space-x-4">
                     <HomeIcon className="navBtn"/>
                     <MenuIcon className="h-6 md:hidden cursor-pointer"/>
-
-                    <PaperAirplaneIcon className="navBtn"/>
+                    <div className="relative navBtn">
+                        <PaperAirplaneIcon className="navBtn rotate-45"/>
+                        <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse text-white">3</div>
+                    </div>
+                    
                     <PlusCircleIcon className="navBtn"/>
                     <UserGroupIcon className="navBtn"/>
                     <HeartIcon className="navBtn"/>
 
-                    <img className="h-10 rounded-full cursor-pointer" src="https://links.papareact.com/ocw" alt="" />
+                    <img className="h-10 rounded-full cursor-pointer" src="https://images.unsplash.com/photo-1555703473-5601538f3fd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" />
                 </div>
 
             </div>
