@@ -10,4 +10,28 @@
     .btn {
         @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out
     }
+
+    /* Header */
+    .header {
+        @apply shadow-sm border-b dark:border-gray-800 bg-white dark:bg-gray-900 sticky top-0 z-50
+    }
+
+    .header__inner {
+        @apply flex justify-between bg-white dark:bg-gray-900 max-w-6xl mx-5 lg:mx-auto
+    }
+
+    /* Stories */
+    .stories {
+        @apply  flex space-x-2 p-6 bg-white dark:bg-gray-900 mt-8 dark:border-gray-800 border-gray-200 border rounded-sm overflow-x-scroll scrollbar-thin scrollbar-thumb-black
+    }
+
+    .stories--image {
+        @apply h-14 w-14 rounded-full p-[1.5px] border-red-500 border-2 object-contain cursor-pointer hover:scale-110 transition transform duration-200 ease-out
+    }
+
+    .stories--username {
+        @apply text-xs w-14 truncate text-center dark:text-white
+    }
+
+    /* Modal */
 }
