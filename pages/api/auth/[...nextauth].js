@@ -23,6 +23,8 @@ export default NextAuth({
       }
   }
 
+  // Customize default view
+
 //   theme: {
 //       logo: 'https://links.papareact.com/ocw',
 //       brandColor: '#F13287',

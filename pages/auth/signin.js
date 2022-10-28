@@ -5,7 +5,7 @@ function signIn({providers}) {
     return (
         <>
             <Header />
-            <div className="flex flex-col items-center justify-center py-2 px-14 text-center dark:bg-gray-900">
+            <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center dark:bg-gray-900">
                 <img className="w-80 dark:invert" src="https://links.papareact.com/ocw" alt="" />
                 <p className="font-xs italic dark:text-gray-200">
                     This is not a REAL app, it is built for educational purposes only

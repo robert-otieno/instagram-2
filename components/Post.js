@@ -34,7 +34,7 @@ function Post({ id, username, userImg, img, caption }) {
     <div className="bg-white dark:bg-gray-900 my-7 border dark:border-gray-800 rounded-sm">
       {/* Header */}
       <div className="flex items-center p-5">
-        <img src={userImg} className="rounded-full h-12 w-12 object-contain border mr-3" alt="" />
+        <img src={userImg} className="rounded-full h-12 w-12 object-contain border p-1 mr-3" alt="" />
         <p className="flex-1 font-bold dark:text-gray-200">{username}</p>
         <DotsHorizontalIcon className="h-5 dark:invert" />
       </div>
@@ -54,6 +54,7 @@ function Post({ id, username, userImg, img, caption }) {
         </div>
       )}
 
+      {/* Caption */}
       <p className="p-5 truncate dark:text-gray-200">
         <span className="font-bold mr-1">{username} </span>
         {caption}
@@ -82,9 +83,7 @@ function Post({ id, username, userImg, img, caption }) {
         <form className="flex items-center p-4">
           <EmojiHappyIcon className="h-7 dark:invert" />
           <input type="text" value={comment} onChange={(e) => setComment(e.target.value)} className="border-none flex-1 focus:ring-0 mx-3 outline-none" placeholder="Add a comment..." />
-          <button type="submit" disabled={!comment.trim} onClick={sendComment} className="font-semibold text-blue-400">
-            Post
-          </button>
+          <button type="submit" disabled={!comment.trim} onClick={sendComment} className="font-semibold text-blue-400">Post</button>
         </form>
       )}
     </div>

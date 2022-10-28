@@ -6,6 +6,15 @@ function Stories() {
     const [suggestions, setSuggestions] = useState([])
     const { data: session } = useSession()
 
+    // useEffect(() => {
+    //   const suggestions = [...Array(20)].map((_, i) => ({
+    //     ...faker.helpers.contextualCard(),
+    //     id: i,
+    //   }))
+    // console.log(suggestions)
+    // setSuggestions(suggestions)
+    // }, [])
+
     useEffect(() => {
         fetch('https://random-data-api.com/api/users/random_user?size=15')
         .then((response) => response.json())
