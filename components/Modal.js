@@ -60,7 +60,7 @@ function Modal() {
       reader.readAsDataURL(e.target.files[0])
     }
 
-    reader.onloadend = (readerEvent) => {
+    reader.onload = (readerEvent) => {
       setSelectedFile(readerEvent.target.result);
     }
   }
